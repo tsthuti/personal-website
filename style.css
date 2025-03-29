@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Alexandria');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+      
+}
+body {
+    font-family: 'Alexandria', sans-serif;
+    background-color: black;
+    color: #fff;
+}
+
+/* landing styling */
+.logo {
+  max-width: 100%;
+  max-height: 100vh; 
+  display: block;
+  margin: 0 auto;
+}
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.hero-container {
+  max-width: 100%;
+  max-height: 100%;
+}
+.column-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  max-width: 100%;
+  max-height: 100vh;
+  object-fit: contain;
+}
+
+/* random text styling */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* bento styling */
+.bento {
+  padding: 30px;
+  }
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+.grid-item-dark, .grid-item-light {
+  border-radius: 20px;
+  padding: 39px;
+  text-align: left;
+  box-sizing: border-box;
+  flex: 1 1 calc(25% - 40px); /* each item span 1/3 of the container */
+}
+.grid-item-dark {
+  background-color: #0D0C0C;
+}
+  .grid-item-light {
+  background-color: #161616;
+}
+.grid-item-dark:nth-child(1) {
+flex: 1 1 calc(50% - 40px); /* 'intro' spans 2 columns */
+}
+.grid-item-dark:nth-child(4) {
+flex: 2 1 calc(66.666% - 40px); /* 'experience' spans 2 columns */
+}
+
+@media (max-width: 768px) {
+.grid-item-dark, .grid-item-light {
+flex: 1 1 calc(50% - 40px); /* on medium screens, items take up half the width */
+}
+}
+@media (max-width: 480px) {
+.grid-item-dark, .grid-item-light {
+flex: 1 1 100%; /* on small screens, items take up full width */
+}
+}
+.grid-item-dark:hover, .grid-item-light:hover {
+  box-shadow: 0 0 20px rgba(128, 128, 128, 0.3); /* add a glow effect */
+  transform: scale(2); /* scale */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+/* projects carousel styling */s
+.project-carousel {
+  display: flex;
+  flex-direction: column;
+}
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-info {
+  flex: 1;
+}
+.project-image-container {
+  flex-shrink: 0; 
+}
+.project-image {
+  width: 200px; 
+  height: auto;
+  padding-right: 30px;
+}
+#project-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#project-description {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-right: 50px;
+}
+#project-link {
+    color: white;
+    text-decoration: italic;
+    padding-bottom: 15px;
+}
+/*decided to add some carousel animations instead of buttons*/
+.project-carousel {
+  position: relative;
+  overflow: hidden;
+}
+.project-content {
+  position: absolute;
+  transition: opacity 1s ease, transform 1s ease;
+  opacity: 0;
+  transform: translateX(100%);
+}
+.project-content.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+.project-content.hide {
+  opacity: 0;
+  transform: translateX(-100%);
+}
