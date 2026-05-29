@@ -199,10 +199,11 @@ a:hover {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  min-height: 260px;
+  min-height: 320px;
 }
 .project-content {
   position: absolute;
+  top: 90px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -246,9 +247,10 @@ a:hover {
 
 @media (max-width: 480px) {
   .project-carousel {
-    min-height: 320px;
+    min-height: 420px;
   }
   .project-content {
+    top: 80px;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
