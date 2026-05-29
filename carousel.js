@@ -19,6 +19,11 @@ const projects = [
         tech: "this project was built using react, typescript, node.js, express, mongoDB, gemini API, mediapipe.",
         link: "https://github.com/jennifershi255/ript", 
         image: "assets/ript.png"},
+    { title: "wtf am i looking at",
+        description: "a chrome extension + react dashboard that tracks browsing habits in real time.",
+        tech: "this project was built using javascript, react, recharts, supabase (postgres + rls), and deployed on vercel.",
+        link: "https://github.com/tsthuti/wtfamilookingat",
+        image: "assets/wtf.png"}
 ];
 
 let currentIndex = 0;

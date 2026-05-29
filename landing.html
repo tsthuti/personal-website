@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tanisha's portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="icon" href="assets/website star.png" />
+</head>
+
+<body class="bento">
+    <main>
+        <section class="grid-container">
+            <div class="grid-item-dark animate__animated animate__slideInUp">
+                <!--intro-->
+                <h1>hello.</h1>
+                <h2>tanisha gottemukula <span style="color: #A7A7A7">is a second year student @ the</span> <a href="http://uwaterloo.ca/">university of waterloo</a>,
+                    pursuing cs & finance.</h2>
+            </div>
+            <div class="grid-item-light animate__animated animate__slideInUp">
+                <!--about-->
+                <h2 style="padding-bottom: 30px;">about.</h2>
+                <p>by day, <span style="color: #A7A7A7">i love working on </span>projects <span style="color: #A7A7A7">and improving my </span> full-stack development skills.</p>
+                <br><br>
+                <p> by night, i am batman <span style="color: #A7A7A7">(true story).</span></p>
+            </div>
+            <div class="grid-item-light star-card animate__animated animate__slideInUp">
+                <!--star-->
+                <a href="index.html"><img src="assets/star.gif" alt="star" class="star-gif"></a>
+            </div>
+            <div class="grid-item-dark project-carousel animate__animated animate__slideInUp">
+                <!--projects-->
+                <h2 style="padding-bottom: 20px;">projects.</h2>
+                <div class="project-slides">
+                    <div class="project-content">
+                        <div class="project-info">
+                            <h2 id="project-title" style="padding-bottom: 10px;">project 1</h2>
+                            <p id="project-description">descr for project 1.</p>
+                            <p id="project-tech" style="padding-bottom: 20px;">tech used: react, node.js, express.js</p>
+                            <a id="project-link" href="https://github.com/user/project1" target="_blank"><i>check out the repository.</i></a>
+                        </div>
+                        <div class="project-image-container">
+                            <img id="project-image" src="assets/stock.png" alt="proj img" class="project-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item-dark animate__animated animate__slideInUp">
+                <!--exp-->
+                <h2 style="padding-bottom: 30px;">experience.</h2>
+                <p>currently a gtm engineer @ <a href="https://www.moderately.ai/">atolio</a>,
+                    <span style="color: #A7A7A7">building sales enablement tooling + LLM-powered pipelines.</p>
+                <br><br>
+                <p><span style="color: #A7A7A7">contributing to </span><a href="https://watai.ca/">wat.ai</a> - building</span> weatherloo<span style="color: #A7A7A7">, a hyperlocal weather forecasting model for the kw region.</span></p>
+            </div>
+            <!--socials-->
+            <a href="https://www.linkedin.com/in/tanisha-gottemukula/" target="_blank" class="grid-item-light social-card animate__animated animate__slideInUp">linkedin</a>
+            <a href="https://github.com/tsthuti" target="_blank" class="grid-item-light social-card animate__animated animate__slideInUp">github</a>
+            <a href="mailto:tanishagottemukula@gmail.com" class="grid-item-light social-card animate__animated animate__slideInUp">email</a>
+        </section>
+        <script src="carousel.js"></script>
+    </main>
+</body>
+</html>
